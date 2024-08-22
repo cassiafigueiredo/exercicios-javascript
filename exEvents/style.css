@@ -1,0 +1,8 @@
+@charset "UTF-8";
+
+#div1 {
+    width: 50%;
+    height: 200px;
+    margin: auto;
+    border: solid 1px black;
+}

@@ -4,6 +4,8 @@
 
 
 
-let nome = 'cassia figueiredo';
-nome = 'patrik silveira'
-console.log(nome)
+var idade, eleitor;
+
+idade = 72;
+eleitor = !(idade ===70) ? "você não tem 70 anos" : "você tem 70 anos"
+alert(eleitor)
