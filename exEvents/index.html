@@ -6,13 +6,26 @@
     <title>testes</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <div onmousemove="writeSum()" onmouseover="turnRed()" onmouseout="turnWhite()" id="div1">
-        <p id="texto">
-            
-        </p>
+<body onresize="alert('houve redimensionamento')">
+    <div onmousemove="changeBorderRadius()" onmouseover="turnRedAndGrow()" onmouseout="turnWhiteAndShrink()" id="div1">
+        <p>onmousemove = border radius <br> onmouseover e onmouseout</p>
     </div>
 
+    <div onmousedown="mouseDownBlue()" onmouseup="mouseUpGreen()" id="div2">
+        <p>mousedown azul e mouseup verde</p>
+    </div>
+    <div id="divInput">
+        <input onfocus="limpaTexto()" onblur="voltaTexto()" id="inputTxt" type="text" value="clique que eu sumo">
+    </div>
+    <div>
+        <select onchange="pinkChange()" id="itens">
+            <option value="amarelo">amarelo</option>
+            <option  value="rosa">rosa</option>
+        </select>
+    </div>
+    <div id="div2">
+        <input onkeydown="teclaPressionada()" id="inputTxt2" type="text">
+    </div>
     <script src="script.js"></script>
 </body>
 </html>
